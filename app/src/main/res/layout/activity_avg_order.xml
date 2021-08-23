@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Home.AvgOrder">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:titleTextColor="@android:color/black"
+            android:background="@color/colorPrimaryDark">
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/clear"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Sales Average Order"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/gradiant_circle"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:text="12/12/2020"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:clickable="true"/>
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/colorPrimaryDark">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Result - "
+                android:textSize="24sp"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:id="@+id/result_text"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Order"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Gross Sales"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Discount"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Return"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Net Sales"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Tax"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total Sales"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#c0c0c0"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sales_over_time_recycler"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

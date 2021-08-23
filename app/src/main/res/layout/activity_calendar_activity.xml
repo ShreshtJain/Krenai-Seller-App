@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.calendar_activity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/get_selected_dates"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_primary"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textAllCaps="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/white"
+        android:elevation="4dp"
+        android:fontFamily="@font/adamina"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="447dp"/>
+
+    <com.savvi.rangedatepicker.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:tsquare_dividerColor="@color/white"
+        app:tsquare_headerTextColor="@color/blue"
+        app:tsquare_orientation_horizontal="false"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+
+
+</LinearLayout>

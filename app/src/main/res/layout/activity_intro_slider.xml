@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282b39">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpIntroSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.krenai.vendor.Activity.Authentication.IndicatorLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:indicatorCount="3" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_capsule"
+        android:clickable="true"
+
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="SKIP"
+        android:textAllCaps="true"
+        android:textColor="#4e4f50"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_capsule"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="NEXT"
+        android:textAllCaps="true"
+
+        android:textColor="#4e4f50"
+        android:textSize="15sp" />
+
+</RelativeLayout>

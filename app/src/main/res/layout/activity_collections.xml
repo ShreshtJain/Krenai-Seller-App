@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Products.Category">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:titleTextColor="@android:color/black"
+            android:background="@color/colorPrimaryDark">
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/clear"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Collections"
+                android:textAllCaps="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+            </TextView>
+
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="8dp">
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            android:layout_alignParentTop="true"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search collections here .." />
+    </androidx.cardview.widget.CardView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="radial">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/product_shimmer"></include>
+
+                <include layout="@layout/product_shimmer"></include>
+
+                <include layout="@layout/product_shimmer"></include>
+
+                <include layout="@layout/product_shimmer"></include>
+
+                <include layout="@layout/product_shimmer"></include>
+
+                <include layout="@layout/product_shimmer"></include>
+            </LinearLayout>
+        </ScrollView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/collections_recycler"/>
+    <TextView
+        android:id="@+id/errortext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:fontFamily="@font/adamina"
+        android:textColor="@color/blue"
+        android:text="No Collections yet"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/floating_add"
+        android:contentDescription="CREATE COLLECTION"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-90dp"/>
+
+
+</LinearLayout>

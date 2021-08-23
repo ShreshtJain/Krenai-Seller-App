@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Orders.Search_Orders">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:background="@drawable/back"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:layout_marginStart="20dp"
+            android:text="Hotels,Villas,Apts and More"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:fontFamily="@font/adamina"
+            android:layout_marginLeft="5dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="#c0c0c0"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="25dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_white"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_primary"
+                        android:text="INDIA"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/button_primary"
+                        android:text="INternational"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </FrameLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:background="#c0c0c0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="City/area/property name"
+            android:textAllCaps="true"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alt Life - Manali"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/adamina"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Manali"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="#c0c0c0"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="4.9"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="check out"
+                android:textAllCaps="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/check_in"
+                android:clickable="true"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/check_indate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/check_inmonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OCT 2020"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/check_inday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#c0c0c0"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="4.9"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="check out"
+                android:textAllCaps="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:id="@+id/check_out"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/check_outdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/check_outmonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OCT 2020"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/check_outday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+
+            <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:textSize="15sp"
+           android:gravity="center"
+            android:text="TRIP TYPE (Optional)"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Pizza" />
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Pizza" />
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Pizza" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical"
+            android:background="#c0c0c0"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+        <Button
+            android:id="@+id/search"
+            android:background="@drawable/button_background_circle"
+            android:layout_width="70dp"
+            android:text="SEARCH"
+           android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:layout_height="70dp">
+
+
+        </Button>
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:background="#c0c0c0"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

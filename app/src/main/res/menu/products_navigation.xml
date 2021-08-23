@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_products"
+        android:icon="@drawable/ic_shop_two_black_24dp"
+        android:title="@string/title_activity_order_products" />
+
+    <item
+        android:id="@+id/navigation_create"
+        android:icon="@drawable/ic_create_new_folder_black_24dp"
+        android:title="@string/title_activity_order_create" />
+
+    <item
+        android:id="@+id/navigation_collection"
+        android:icon="@drawable/ic_filter_9_plus_black_24dp"
+        android:title="@string/title_activity_order_collection" />
+
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+        android:title="@string/title_activity_category" />
+    <item
+        android:id="@+id/navigation_filter"
+        android:icon="@drawable/sort"
+        android:title="@string/title_activity_filter" />
+
+</menu>

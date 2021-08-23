@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Home.SalesByProduct">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:titleTextColor="@android:color/black"
+            android:background="@color/colorPrimaryDark">
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/clear"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Sales By Product"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/gradiant_circle"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:text="12/12/2020"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:clickable="true"/>
+        </LinearLayout>
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Result - "
+                android:textSize="24sp"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:id="@+id/result_text"/>
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Image"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Date"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="Product Name"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="Category Name"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="Sub-Category Name"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:text="Sub-SubCategory Name"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Net Quantity"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Sku Code"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp" />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Selling Price"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Net Sale"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:text="Total Sale"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_margin="5dp"/>
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sales_recycler"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+

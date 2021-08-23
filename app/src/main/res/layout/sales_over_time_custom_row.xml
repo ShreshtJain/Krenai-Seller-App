@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="2020-11-01"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/gross_sales"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Gross Sales"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/Return"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/net_sales"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Net Sales"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/shipping"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Shipping"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Tax"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/total_sales"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Total Sales"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    </HorizontalScrollView>

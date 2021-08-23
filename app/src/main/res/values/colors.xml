@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#1f222d</color>
+    <color name="colorAccent">#2822fb</color>
+    <color name="background_color">#282b39</color>
+    <color name="intro_text">#4e4f50</color>
+    <color name="color_hint">#808080</color>
+    <color name="themeColorDark">#000000</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondry">#555555</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="windowBackground">#F1F1F1</color>
+    <color name="windowBackgroundDark">#8e8e8e</color>
+    <color name="actionButton">#FF5722</color>
+    <color name="colorRipper">#b1b1b1</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#ffa726</color>
+    <color name="dark_green">#8BC34A</color>
+    <color name="blue">#2822fb</color>
+    <color name="dark_blue">#2822fb</color>
+    <color name="curve_1">#0C95F3</color>
+    <color name="curve_2">#0B54D5</color>
+
+    <color name="calendar_selected_day_bg">#2822fb</color>
+    <color name="calendar_selected_range_bg">#0C95F3</color>
+
+    //this is for HighLighted dates
+    <color name="calendar_unavailable_bg">#F44336</color>
+    <color name="calendar_range_middle_unavailable_bg">#F44336</color>
+
+    // this is for Deactivated dates
+    <color name="calendar_range_middle_deactivated_bg">#673AB7</color>
+
+    <color name="shimmer_background">#dddddd</color>
+
+    //Search Bar colors
+    <color name="searchBarIconColor">#3a3a3a</color>
+    //Base
+    <color name="searchBarPrimaryColor">#FFFFFF</color>
+    <color name="searchBarCursorColor">#8000a1ff</color>
+    <color name="searchBarDividerColor">#1F000000</color>
+
+    //Icons
+    <color name="searchBarNavIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarMenuIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarSearchIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarClearIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarBackIconTintColor">@color/searchBarIconColor</color>
+
+    //Text
+    <color name="searchBarTextColor">#DE000000</color>
+    <color name="searchBarHintColor">#42000000</color>
+    <color name="searchBarPlaceholderColor">#8A000000</color>
+    <color name="searchBarTextHighlightColor">#8000a1ff</color>
+
+    //Base
+    <color name="searchBarPrimaryColorDark">#303030</color>
+    <color name="searchBarDividerColorDark">#1FFFFFFF</color>
+
+    //Material SearchBar Dark Theme Colors
+    <color name="searchBarIconColorDark">#00a1ff</color>
+    //Icons
+    <color name="searchBarNavIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarMenuIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarSearchIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarClearIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarBackIconTintColorDark">@color/searchBarIconColorDark</color>
+
+    //Text
+    <color name="searchBarTextColorDark">#DEFFFFFF</color>
+    <color name="searchBarHintColorDark">#42FFFFFF</color>
+    <color name="searchBarPlaceholderColorDark">#8AFFFFFF</color>
+    <color name="searchBarTextHighlightColorDark">#BF00a1ff</color>
+</resources>

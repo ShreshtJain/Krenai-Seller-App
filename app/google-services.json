@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "382818658961",
+    "firebase_url": "https://krenai-webapp.firebaseio.com",
+    "project_id": "krenai-webapp",
+    "storage_bucket": "krenai-webapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382818658961:android:68b7727a6d295ae2cf6d30",
+        "android_client_info": {
+          "package_name": "com.krenai.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382818658961-t7ob797btndlfajqqob5r4gv3imnj8nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg-Bno5oFpaue-EcqU04xS8LK9LGfET5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382818658961-t7ob797btndlfajqqob5r4gv3imnj8nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382818658961:android:0851ace987e8ae4ecf6d30",
+        "android_client_info": {
+          "package_name": "com.wemenuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382818658961-t7ob797btndlfajqqob5r4gv3imnj8nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg-Bno5oFpaue-EcqU04xS8LK9LGfET5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382818658961-t7ob797btndlfajqqob5r4gv3imnj8nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

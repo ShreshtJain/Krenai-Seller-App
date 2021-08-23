@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.krenai.vendor">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".utils.context.ApplicationContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Products.ProductList"></activity>
+        <activity android:name=".Activity.Products.AddProductCollection" />
+        <activity android:name=".SearchableActivity" />
+        <activity android:name=".Activity.Home.CustomerReviews" />
+        <activity android:name=".Activity.Home.CustomerDetails" />
+        <activity android:name=".Activity.Home.CustomersOverTime" />
+        <activity
+            android:name=".Complete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.EditVariantOptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home.FinanceSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home.FinanceSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home.AvgOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home.SalesByProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home.SalesOverTime"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.VariantMatrix"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.VariantDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.AddVariants"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.AddCollection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.Collections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.AddCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Orders.Search_Orders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.calendar_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Orders.Order_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Profile.Notifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Profile.Edit_Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Orders.ProcessOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.ProductUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Products.Create_Product"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Authentication.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Authentication.OTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Authentication.ForgetPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.Authentication.IntroSliderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.Authentication.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_wb" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="CHANNEL_ID" />
+
+        <service
+            android:name=".utils.Firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".utils.Firebase.NotificationCancelReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="com.cancel" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

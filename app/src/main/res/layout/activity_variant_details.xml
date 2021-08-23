@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Products.VariantDetails">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:titleTextColor="@android:color/black"
+            android:background="@color/colorPrimaryDark">
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/clear"/>
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Add values for "
+                android:layout_weight="9"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:textAllCaps="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+            </TextView>
+
+        </LinearLayout>
+    </FrameLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_height="wrap_content"
+                        android:hint="Option value"
+                        android:padding="10dp"
+                        android:textSize="18sp"
+                        android:id="@+id/value"/>
+                    <ImageView
+                        android:id="@+id/add_value"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:background="@drawable/floating_add"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:id="@+id/parentLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+                            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+</LinearLayout>
+
+
